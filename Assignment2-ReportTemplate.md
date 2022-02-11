@@ -32,7 +32,7 @@ Since the lab required 10 methods to be tested, each team member was responsible
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
-Text…
+During this second lab, the majority of our group's problems came not from the content but other sources. No one in our group had much experience with Eclipse, so we had to work as a group to navigate our way through this unfamiliar IDE. Also we had a few difficulties handling the sheer volume of files involved while setting up the assignment. Both these challenges were overcome by communicating as a group and not being afraid to ask for help if stuck at any point. 
 
 # 6 Comments/feedback on the lab itself
 
