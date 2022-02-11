@@ -2,7 +2,7 @@
 
 **Lab. Report \#2 – Requirements-Based Test Generation**
 
-| Group \:  35                 |
+| Group \:  35     |            |
 |-------------------|------------|
 | Student Names:    |    UCID    |
 | Luis Sulbaran     | 30090906   |
