@@ -35,9 +35,9 @@ Boundary value testing was another testing technique that we performed which all
 
 ![RangeEx2](https://user-images.githubusercontent.com/81999006/153535522-668af948-a74f-4b14-809c-e2abd1e673ea.png)
 
-## Mocking
+## Discussion on Mocking
 
-
+Since some of our methods use interfaces such as Values2D, we cannot test them without mocking. Mocking will allow us to separate the method we are testing from any external objects that it uses. By creating a mock object, we have a dummy implementation for the interface. This benefit of mocking allows us to truly test only a single component, since it isolates the function that is being tested from its dependencies. A drawback of mocking with black-box testing we faced was not being able to see the source code, thus not knowing how the interface was being used and what limitations the interface objects have. 
 
 # 3 Test cases developed
 
