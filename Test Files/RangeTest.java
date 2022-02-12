@@ -5,12 +5,12 @@ import static org.junit.Assert.*; import org.jfree.data.Range; import org.junit.
 public class RangeTest {
 	
 	private Range exampleRange;
-    private Range exampleRange2;
-    private Range exampleRange3;
-    private Range exampleRange4;
-    private Range exampleRange5;
-    private Range exampleRange6;
-    private Range exampleRange7;
+	private Range exampleRange2;
+    	private Range exampleRange3;
+   	private Range exampleRange4;
+    	private Range exampleRange5;
+    	private Range exampleRange6;
+    	private Range exampleRange7;
     
     @BeforeClass public static void setUpBeforeClass() throws Exception {
     }
