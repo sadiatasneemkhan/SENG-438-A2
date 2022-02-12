@@ -132,11 +132,95 @@ and upper bound).
 
 ## DataUtilitiesTest
 
-Text…
+## tests for calculateColumnTotal() 
 
-// write down the name of the test methods and classes. Organize the based on
-the source code method // they test. identify which tests cover which partitions
-you have explained in the test strategy section //above
+test_calculateColumnTotal_posDoubleNum() 
+- Tests for the summation of positive double numbers withing a column
+
+test_calculateColumnTotal_negDoubleNum() 
+- Tests for the summation of negative double numbers withing a column
+
+test_calculateColumnTotal_posIntNum() 
+- Tests for the summation of positive integer numbers withing a column
+
+test_calculateColumnTotal_negIntNum() 
+- Tests for the summation of negative integer numbers withing a column
+
+Testing strategy: Using mocking, mock objects of Value2D were created in order to test the function independently with no dependencies.
+
+## tests for equal() 
+
+test_equal_normalCase()
+- Tests two normal equal arrays
+	
+test_equal_notEqual()
+- Tests two normal not equal arrays
+
+test_equal_differentDimensions()
+- Tests arrays with different dimensions
+	
+test_equal_bothNull()
+- Tests the equality of two null arrays
+
+test_equal_oneNull()
+- Tests a null array with a normal one
+
+test_equal_infValue()
+- Tests two equal arrays containing infinite values
+
+test_equal_nanValue()
+- Tests two equal arrays containing NaN values
+
+## tests for clone() 
+
+test_clone_declare()
+- Clones the array into an array that is being declared
+	
+test_clone_reassign()
+- Reassigns an array value by cloning into it
+
+test_clone_increaseDimensions()	
+- Clones an array with greater dimensions 3x3 into an array with smaller dimensions 2x2
+
+## tests for createNumberArray() 
+
+test_createNumberArray_test()
+- Test array of size 2
+
+test_createNumberArray_bigNums()
+- Test array of size 2 with very big values
+
+test_createNumberArray_bigNegativeNums()
+- Test array of size 2 with very negative values
+
+test_createNumberArray_millionArray()
+- Test array of size 1000000
+
+test_createNumberArray_nullArray()
+- Test null array
+
+test_createNumberArray_testNullValue()
+- Test array with a null value
+
+## tests for createNumberArray2D() 
+
+test_createNumberArray2D_test()
+- Tests an array of size 2x2
+
+test_createNumberArray2D_bigNums()
+- Tests an array of size 2x2 with very large values
+
+test_createNumberArray2D_bigNegativeNums()
+- Tests an array of size 2x2 with very negative values
+
+test_createNumberArray2D_millionArray()
+- Tests an array of size 1000x1000
+
+test_createNumberArray2D_nullArray()
+- Tests a null array
+
+test_createNumberArray2D_testNullValue()
+- Tests an array with a null value
 
 # 4 How the team work/effort was divided and managed
 
