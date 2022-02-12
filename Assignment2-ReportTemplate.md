@@ -37,6 +37,40 @@ Boundary value testing was another testing technique that we performed which all
 
 # 3 Test cases developed
 
+## RangeTest
+
+## tests for expandToInclude() 
+
+test_expandToInclude_withinRange()
+- Covers the inputs for values that are within the provided range
+- NOM: a nominal value
+
+test_expandToInclude_outsideUpperRange()
+- Covers the inputs for values that are outside of the upper bound of the provided range
+- AUB : value just above upper bound
+
+test_expandToInclude_outsideLowerRange()
+- Covers the inputs for values that are outside of the lower bound of the provided range 
+- BLB: value below lower bound
+
+test_expandToInclude_lowerBoundary()
+- Input covers the value on the lower boundary (LB)
+
+test_expandToInclude_upperBoundary()
+- Input covers the value on the upper boundary (UB)
+
+Testing strategy: Using ECT, split into 3 partitionss which are (-inf, lower), (lower, upper) and (upper, +inf). Using BVT, the upper and lower bound values were also covered. NOM, AUB, BLB, LB, UB were all covered within these tests. Also, BUB and ALB inputs were covered through the within-range ECT.
+
+## tests for getLowerBound() 
+
+test_getLowerBound_negBound()
+- Covers ranges with any negative lower bound
+
+test_getLowerBound_posBound()
+- Covers ranges with any positive lower bound
+
+## DataUtilitiesTest
+
 Text…
 
 // write down the name of the test methods and classes. Organize the based on
