@@ -94,6 +94,24 @@ test_contains_insideUpperRange()
 
 Testing Strategy: Split up range into 3 different partitions using ECT which were (-inf, lower), (lower, upper) and (upper, +inf). Also used the BVT to expand our testing and cover all ranges to include BLB, LB, ALB, NOM, BUB, UB, and AUB.
 
+## tests for getLength() 
+
+test_getLength_negPos()
+- Tests for the length of a range with negative lower bound and positive upper bound
+
+test_getLength_negNeg()
+- Tests for the length of a range with negative lower bound and negative upper bound
+
+test_getLength_posPos()
+- Tests for the length of a range with positive lower bound and positive upper bound
+
+test_getLength_bigNegPos()
+- Tests for the length of a range with a massive negative lower bound and massive positive upper bound
+
+test_getLength_sameBounds()
+- Tests for the length of a range with the same lower and upper bound
+
+Testing Strategy: Using ECT, covered all types of inputs using various partitions. These inputs were, (+val, -val), (+val, +val), (-val, -val), (big +val, big -val), and (0,0).
 
 ## DataUtilitiesTest
 
