@@ -12,7 +12,7 @@
 
 # 1 Introduction
 
-This lab utilizes the Eclipse IDE along with JUnit in order to test various methods of class Range and DataUtilities. The goal of this lab is to learn how to design and implement proper unit tests for black box testing and run multiple test cases to cover all the requirements.
+The goal of this lab was to learn how to design and implement proper unit tests using the testing strategies learned in lectures. Black-box testing was the main focus, as we gained knowledge about he function through its JavaDoc, since we did not have access to the implementation of the methods. This lab utilized Junit on Eclipse to test the various methods of class Range and DataUtilities. 
 
 # 2 Detailed description of unit test strategy
 
