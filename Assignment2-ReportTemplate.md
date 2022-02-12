@@ -69,6 +69,32 @@ test_getLowerBound_negBound()
 test_getLowerBound_posBound()
 - Covers ranges with any positive lower bound
 
+## tests for contains() 
+
+test_contains_withinRange()
+- Tests for values contained within the specified range
+
+test_contains_upperBound()
+- Tests for values that are exactly on the upper bound of the specified range
+
+test_contains_lowerBound()
+- Tests for values that are exactly on the lower bound of the specified range
+
+test_contains_outsideLowerRange()
+- Tests for values just outside of the lower bound of the specified range
+
+test_contains_outsideUpperRange()
+- Tests for values just outside of the upper bound of the specified range
+
+test_contains_insideLowerRange()
+- Tests for values contained just below the lower bound of the specified range
+
+test_contains_insideUpperRange()
+- Tests for values contained just below the upper bound of the specified range
+
+Testing Strategy: Split up range into 3 different partitions using ECT which were (-inf, lower), (lower, upper) and (upper, +inf). Also used the BVT to expand our testing and cover all ranges to include BLB, LB, ALB, NOM, BUB, UB, and AUB.
+
+
 ## DataUtilitiesTest
 
 Text…
