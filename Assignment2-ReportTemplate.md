@@ -16,9 +16,12 @@ The goal of this lab was to learn how to design and implement proper unit tests 
 
 # 2 Detailed description of unit test strategy
 
-The testing strategies we used to design our test cases followed the black-box design techniques of equivalence classes (ECT), and boundary value analysis (BVT). Through equivalence testing we were able to divide possible method inputs into “partitions” which allowed us to separate any valid and invalid inputs. In each test case, we followed the ECT principles by deciding how many independent variables we will have to work with. We then decided how many distinct partitions were needed to cover all possible edge cases. Following this style we were able to then create tests cases using acceptable values from each partition, and were able to distinguish any redundant cases and/or add more tests to problems that came up. For example, when working with the contains() method in the Range class, we used the 2 independent variables we were working with to come up with 3 distinct partitions. For a range of (-100, 200), any invalid inputs would appear from the range -inf to -100 and 200 to +inf. All valid inputs would appear from any range -100 to 200. We were then able to break down our partitions even further by using BVT which I will discuss in the following section.
+The testing strategies we used to design our test cases followed the black-box design techniques of equivalence class testing and boundary value testing. 
 
-Range contain() method example:
+## Equivalence Class Testing (ECT)
+Through equivalence class testing, we were able to divide possible method inputs into “partitions”, which then allowed us to separate any valid and invalid inputs. In each test case, we followed the ECT principles by deciding how many independent variables we will have to work with. We then decided how many distinct partitions were needed to cover all possible edge cases. Following this style, we were able to then create tests cases using acceptable values from each partition, and were able to distinguish any redundant cases and/or add more tests to problems that came up. For example, when working with the contains() method in the Range class, we used the 2 independent variables we were working with to come up with 3 distinct partitions. For a range of (-100, 200), any invalid inputs would appear from the range -inf to -100 and 200 to +inf. All valid inputs would appear from any range -100 to 200. We were then able to break down our partitions even further by using BVT which I will discuss in the following section.
+
+### Range contain() method example:
 
 	1. Decide the number of independent variables: 2.
 	2. How many distinct partitions? 3.
@@ -27,7 +30,8 @@ Range contain() method example:
 
 ![RangeEx1](https://user-images.githubusercontent.com/81999006/153535520-dbb6cd04-d2eb-4052-bc2e-e0998c36b2a0.png)
 
-Boundary value analysis was another testing technique that we performed which allowed us to process inputs at or near the boundaries of the equivalence classes that we came up with. BVT was crucial in our testing to develop more accurate test cases where we could discover any hidden inputs that could have possibly failed our tests. A lot of times, test developers run into bugs when the methods are tested with values that lie exactly on or close to a boundary. BVT allows us to solve this problem, which is why we followed this testing method to cover all sides of our boundary partitions. I will continue by using the example that I mentioned above, to better understand how we developed on from the ECT method. As mentioned before and seen in our image, our range extended from -100.0 to 200.0. Using this range, we were able to test all possible bugs for this method by covering all boundaries with 7 possible inputs as shown in the image below.
+## Boundary Value Testing (BVT)
+Boundary value testing was another testing technique that we performed which allowed us to process inputs at or near the boundaries of our equivalence classes. BVT was crucial in our testing to develop more accurate test cases where we could discover any hidden inputs that could have possibly failed our tests. A lot of times, test developers run into bugs when the methods are tested with values that lie exactly on or close to a boundary. BVT allows us to solve this problem, which is why we followed this testing method to cover all sides of our boundary partitions. We will continue by using the example that was mentioned above to better understand how it was developed on from the ECT method. As mentioned before and seen in our image, our range extended from -100.0 to 200.0. Using this range, we were able to test all possible bugs for this method by covering all boundaries with 7 possible inputs as shown in the image below.
 
 ![RangeEx2](https://user-images.githubusercontent.com/81999006/153535522-668af948-a74f-4b14-809c-e2abd1e673ea.png)
 
