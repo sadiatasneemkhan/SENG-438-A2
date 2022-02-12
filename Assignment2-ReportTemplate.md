@@ -49,4 +49,5 @@ During this second lab, the majority of our group's problems came not from the c
 
 # 6 Comments/feedback on the lab itself
 
-Text…
+This lab was a useful and functional exercise for us, as it grew our familiarity with JUnit tests, mocking and Eclipse. The lab forced us to think of possible edge cases where the specified methods could fail, which expanded our knowledge on how to approach JUnit testing. Moving forward, I think this lab helped us learn how to properly test methods using JUnit tests and mocking. Throughout the lab we found a couple cases where the created JUnit tests would fail, the failed tests indicated bugs in the method code which should be fixed eventually.
+
