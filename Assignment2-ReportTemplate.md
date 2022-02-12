@@ -35,6 +35,10 @@ Boundary value testing was another testing technique that we performed which all
 
 ![RangeEx2](https://user-images.githubusercontent.com/81999006/153535522-668af948-a74f-4b14-809c-e2abd1e673ea.png)
 
+## Mocking
+
+
+
 # 3 Test cases developed
 
 ## RangeTest
