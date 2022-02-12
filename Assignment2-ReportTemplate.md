@@ -113,6 +113,23 @@ test_getLength_sameBounds()
 
 Testing Strategy: Using ECT, covered all types of inputs using various partitions. These inputs were, (+val, -val), (+val, +val), (-val, -val), (big +val, big -val), and (0,0).
 
+## tests for getCentralValue() 
+
+test_getCentralValue_negAndPosRange()
+- Tests for the central value of a range with a negative lower bound and positive upper bound
+
+test_getCentralValue_negRange()
+- Tests for the central value of a range with a negative lower bound and negative upper bound
+
+test_getCentralValue_posRange()
+- Tests for the central value of a range with a positive lower bound and positive upper bound
+
+test_getCentralValue_zeroRange()
+- Tests for the central value of a range with the same lower bound and upper bound
+
+Testing Strategy: Using ECT to cover partitions using different types of inputs (+val, -val), (+val, +val), (-val, -val), and using 0 as the central value (same lower
+and upper bound).
+
 ## DataUtilitiesTest
 
 Text…
